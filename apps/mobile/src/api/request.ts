@@ -2,8 +2,8 @@ import axios, { AxiosInstance, AxiosError, AxiosRequestConfig, AxiosResponse } f
 import { useAuthStore } from '@/stores/authStore';
 import * as Linking from 'expo-linking';
 
-// Base URL - in production this would come from environment
-const BASE_URL = Linking.createURL('/api/v1').replace('/api/v1', '') || 'http://localhost:4000/api/v1';
+// Base URL - configure for local development
+const BASE_URL = 'http://192.168.0.87:4000/api/v1';
 
 console.log('API Base URL:', BASE_URL);
 
